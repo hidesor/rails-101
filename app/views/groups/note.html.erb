@@ -1,0 +1,357 @@
+<p>
+設定 Git  <br>
+deMacBook-Pro:~ benwu$ git config --global user.name "BenWu"  <br>
+deMacBook-Pro:~ benwu$ git config --global user.email "hidesor@yahoo.com.tw"  <br>
+deMacBook-Pro:~ benwu$ git config --get user.name   <br>
+BenWu  <br>
+deMacBook-Pro:~ benwu$ git config --get user.email  <br>
+hidesor@yahoo.com.tw  <br>
+
+
+  <br>
+Your identification has been saved in /Users/benwu/.ssh/id_rsa.  <br>
+Your public key has been saved in /Users/benwu/.ssh/id_rsa.pub.  <br>
+The key fingerprint is:  <br>
+2a:7c:77:40:20:af:f8:ca:59:bc:46:ac:be:b1:45:d9 hidesor@yahoo.com.tw  <br>
+The key's randomart image is:  <br>
++--[ RSA 2048]----+  <br>
+|    . .          |  <br>
+|     o .         |  <br>
+|      . .        |  <br>
+|   . + .         |  <br>
+|  ..+ E S        |  <br>
+|   =o  . .       |  <br>
+|  .oB o . .      |  <br>
+| ..B.+ . .       |  <br>
+| .Bo.            |  <br>
++-----------------+  <br>
+
+
+
+  <br>
+把產生完的 public key 加入認證管理程式（authentication agent）：  <br>
+在終端機打這些字：  <br>
+ssh-add ~/.ssh/id_rsa  <br>
+  <br>
+查看版本  <br>
+deMacBook-Pro:~ benwu$ rails -v  <br>
+  <br>
+開資料夾  <br>
+deMacBook-Pro:~ benwu$ mkdir railsbridge  <br>
+  <br>
+切換資料夾  <br>
+deMacBook-Pro:~ benwu$ cd railsbridge  <br>
+  <br>
+開專案  <br>
+deMacBook-Pro:railsbridge benwu$ rails new snoopy  <br>
+  <br>
+切換資料夾  <br>
+deMacBook-Pro:~ cd test_app  <br>
+  <br>
+開伺服器  <br>
+rails server     <br>
+rails s 也可以  <br>
+  <br>
+關伺服器  <br>
+rails server 的終端機視窗，按下 Ctrl+C    <br>
+回到資料夾上一層 <br>
+cd .. （cd和點點中間有空格）<br>
+
+
+  <br>
+產生資料庫的 model  <br>
+  <br>
+rails generate scaffold drink name:string temperature:integer  <br>
+  <br>
+rake db:migrate  <br>
+  <br>
+rails server  <br>
+
+
+
+  <br>
+git init  <br>
+Initialized empty Git repository in /Users/benwu/railsbridge/snoopy/.git/  <br>
+
+  <br>
+it add .   <br>
+("git add dot") 把所有新檔案和改過的檔案加進追蹤修訂，但「保留」你刪掉的檔案。  <br>
+
+  <br>
+git add -A   <br>
+全部加進追蹤修訂，包括刪掉的檔案。  <br>
+  <br>
+git commit -m "initial commit"  <br>
+一堆 create mode 100644 Gemfile  <br>
+
+git log  <br>
+檢視紀錄  <br>
+
+
+
+  <br>
+從這個本地的 Rails 應用程式來新增一個 Heroku 應用程式。  <br>
+heroku create  <br>
+Heroku 的應用程式會自動得到抒情風格的名字，看起來像 '[形容詞]-[名詞]-[數字]'。每個名字都不同。  <br>
+
+  <br>
+git remote show  <br>
+heroku  <br>
+
+依ＤＢ調整  <br>
+group :development, :test do  <br>
+  gem 'sqlite3'  <br>
+end  <br>
+  <br>
+group :production do  <br>
+  gem 'pg'  <br>
+  gem 'rails_12factor'  <br>
+end  <br>
+
+  <br>
+把修訂加入到 git  <br>
+git add .  <br>
+git commit -m "Updates for heroku deployment"  <br>
+  <br>
+部署（push）到 Heroku  <br>
+git push heroku master  <br>
+  <br>
+----> Launching...... done    (有done就是ＯＫ)  <br>
+  <br>
+佈上去後 同步ＤＢ  <br>
+heroku run rake db:migrate  <br>
+  <br>
+看到應用程式的名字  <br>
+heroku info  <br>
+  <br>
+瀏理器打開應用程式  <br>
+heroku open  <br>
+  <br>
+
+rvm -v  <br>
+bundle -v  <br>
+rails -v  <br>
+ruby -v  <br>
+  <br>
+問問題要到這裡po code  <br>
+https://gist.github.com  <br>
+<br>
+
+如果只知道某關鍵字，卻不知道在哪個檔案裡的話，可以用 shift + ⌘ + f 來對專案做全域搜尋，找到有此關鍵字的檔案  <br>
+ <br>
+安裝gem<br>
+bundle install <br>
+ <br>
+幫網站穿衣服：使用 Bootstrap <br>
+gem 'bootstrap-sass' <br>
+ <br>
+把 app/assets/stylesheets/application.css 更名為 app/assets/stylesheets/application.css.scss <br>
+然後加上 <br>
++ @import "bootstrap-sprockets"; <br>
++ @import "bootstrap"; <br>
+ <br>
+app/views/common 加上 _navbar.html.erb   _footer.html.erb <br>
+修改 app/views/layouts/application.html.erb <br>
+div 加入  class="container-fluid"  並加上 %= render "common/navbar" %    以及   %= yield % <br>
+
+ <br>
+
+建立新專案 (ruby 2.2.0) 使用不安裝的rails <br>
+gem install rails -v 4.2.0 --no-ri 尾端的參數代表不安裝說明檔， <br>
+rails _4.2.0_ new rails101 -T 後面的 "-T" 是指不安裝內建的 test unit <br>
+進入新建好的專案, 並建立 git 做版本控制<br>
+cd rails101 <br>
+git init <br>
+git add . <br>
+git commit -m "Initial Commit" <br>
+<br>
+----------------------------------------------<br>
+第三章：手動架構出討論版「架構」的基礎網站 <br>
+ <br>
+建立一個 controller: groups (要加s) <br>
+rails g controller groups <br>
+ <br>
+建立一個 Model: group (不加s) <br>
+並順便建立資料表 group 的二個欄位: title (string 字串屬性) 跟 description (text 文字屬性) <br>
+ <br>
+rails g model group title:string description:text <br>
+ <br>
+資料驗證: title 不能空白  <br>
+model 可以做出所有跟資料庫相關的設定 <br>
+ <br>
+app/models/group.rb   加上  <br>
++ validates :title, presence: true <br>
+ <br>
+
+豆知識： RESTful 概念 與 MVC 概念 <br>
+ <br>
+HTTP Verb 有四種 <br>
+ <br>
+新增 (create，使用 POST ) <br>
+讀取 (read，使用 GET ) <br>
+更新 (update，使用 PUT ) <br>
+刪除 (destroy，使用 DELETE) <br>
+在這組 controller 當中，我們會實作 7 個 Action ，4 張頁面。 <br>
+ <br>
+首頁( index )：用來列出所有的討論版，可以選擇各個單版 （使用 GET ) <br>
+各個討論版專屬頁面(show)：顯示討論版版名跟簡介 (使用 GET ) <br>
+新增頁面(new)：裡面會有表單，填完以後可以送出 (使用 GET ) <br>
+產生資料（create) ：new 送出來的表單到 create 這個 action，新增一筆資料 ( 使用 POST ) <br>
+修改頁面(edit)：裡面會有表單呈現現有資料來，填完資料後可以送出 (使用 GET ) <br>
+更新資料（update)：edit 送出來的表單可以到 update 這個 action，更新該筆資料 (使用 PUT ) <br>
+刪除資料：送出刪除請求，刪除該筆資料（使用 DELETE） <br>
+這七個 action ，是每個CRUD功能裡最基本的動作。只要我們在 controller.rb 裡定義 (def) 好這七個方法當作動作 (action)。其他的部分 Rails 就會幫我們處理了。 <br>
+ <br>
+像是設定 Routing (路由) 只需要簡單一行: resource :groups   (常用)<br>
+<br>
+A. /groups/ 一定就是 index，首頁，對應Routes路徑(或稱為helper)： groups_path<br>
+B. /groups/123 一定就是 show，名字為123的討論版個版頁面，對應Routes路徑(或稱為helper)： group_path(123)<br>
+C. /groups/123/edit 一定就是 edit，修改討論版123的表單頁面，對應Routes路徑(或稱為helper)：edit_group_path(123)<br>
+D. /groups/new 一定就是 new，新增討論版的表單頁面，對應Routes路徑(或稱為helper)：new_group_path<br>
+<br>
+<br>
+app/models/group.rb <br>
+<br>
+    validates :title, :presence => true<br>
+<br>
+    Title欄位(屬性: 字串string) 跟 Description欄位(屬性：多行文字text)<br>
+    ActiveRecord::Base 代表這個 class 繼承了 Rails 裡內建的函式庫： ActiveRecord::Base 裡的功能<br>
+    ActiveRecord 是 Rails 的 ORM(Object Relational Mapping) 元件，負責與資料庫溝通，讓我們能用 Ruby 語法操作資料庫<br>
+    以本例來說，我們就能在 Controller 或是 Rails Console (主控台)用 Group 來呼叫對應在資料庫裡的『Group』這個資料表，並操作 CRUD 功能<br>
+    更能在 app/models/group.rb 裡面做出許多跟資料庫相關的設定，例如第二行就是設定 title 這個欄位必填(不能空白)
+<br>
+<br>
+<br>
+解決 rake db:migrate <br>
+rails g model group title:string ...(後面略) + rake db:migrate<br>
+rails g migration add_name_to_user ...(後面略) + rake db:migrate<br>
+<br>
+過程當中出了一些錯<br>
+像是打錯字 integer 打成 interger,<br>
+或是要在 migrate 檔裡面做設定<br>
+設定完以後才能跑 rake db:migrate , 可是順序做錯，導致先跑 rake db:migrate 才改檔案內容<br>
+最快的解決方法是:<br>
+先到 db/migrate 的資料夾底下檢查好各個 migrate 檔的設定無誤 ( 會依照時間順序，最新的排在最下面 ) 以後直接打
+<br>
+rake db:drop <br>
+rake db:create<br>
+rake db:migrate <br>
+rake db:seed 即可<br>
+<br>
+
+建立表格關聯性 <br>
+建立 group 與 post 之間 model 的關聯性 (relationship)<br>
+app/models/group.rb  <br>
+class Group  ActiveRecord::Base <br>
+  validates :title, presence: true<br>
++ has_many :posts<br>
+end<br>
+<br>
+
+以及 app/models/post.rb <br>
+class Post  ActiveRecord::Base <br>
++ belongs_to :group <br>
+end <br>
+<br>
+
+<br>
+安裝 gem "devise" <br>
+gemfile 打開後加入 gem "devise", "~> 3.4.1" <br>
+bundle install <br>
+ <br>
+設定 Devise <br>
+ <br>
+rails g devise:install <br>
+devise 安裝 <br>
+ <br>
+rails g devise user <br>
+建立 user 功能 <br>
+rake db:migrate <br>
+由於需要一個資料庫來儲存使用者資料  devise 很聰明的幫我們把相關設定都做好了 <br>
+所以只需要執行這行來建立 User 的資料庫 <br>
+ <br>
+rails g devise:views <br>
+叫出(原本是隱藏的) devise views <br>
+未來可以客製化修改 <br>
+ <br>
+別忘了重開 rails server <br>
+ <br>
+
+
+Active Record 關聯(很重要)<br>
+http://rails.ruby.tw/association_basics.html<br>
+
+
+<br>
+進入 rails console 模式<br>
+rails c<br>
+<br>
+輸入以下指令:<br>
+<br>
+Group.where(user_id: nil).destroy_all<br>
+Post.where(user_id: nil).destroy_all<br>
+Post.where(group_id: nil).destroy_all<br>
+即可完成<br>
+
+<br>
+刪資料<br>
+Group.destroy_all<br>
+Post.destroy_all<br>
+Post.destroy_all<br>
+
+
+
+<br>
+helper 是全域的變數，即使寫在 posts_helper.rb 裡面 <br>
+在其他地方像是 groups / account/groups / account/posts  都能呼叫得出來 <br>
+
+<br>
+rake -T<br>
+會列出所有目前能執行的 rake 指令 (包含 install gem 以後建置在內的)<br>
+
+
+<br>
+資料清空重件<br>
+lib/tasks/dev.rake<br>
+<br>
+namespace :dev do<br>
+  desc "Rebuild system"<br>
+  task :build => ["tmp:clear", "log:clear", "db:drop", "db:create", "db:migrate"]<br>
+  task :rebuild => [ "dev:build", "db:seed" ]<br>
+end<br>
+<br>
+rake dev:build<br>
+即可把專案資料一切清空歸零重建<br>
+<br>
+rake dev:rebuild<br>
+即可重建完再跑 seed<br>
+<br>
+
+<br>
+先輸入 more ~/.ssh/id_rsa.pub 看看有沒有東西<br>
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGMSA1E1fPn0q45kDFJTYOldZjqUTZ0itoLr44zCiwBZ/ujA4MgyMrtVCPrSrnIL5loiPh9xrfZqaBrQibI/nD5l578Ez8xVqkJ3mkCZZzacSdb3wCKUoYm3uhe2rs6zNONnpNPm5StLU64NpgcykEgyZpcoLFcXTb4FM3fdrUWeg2H4xAoyQRZELz4ok1xsuxPxavZpOp5F4086luF5LHWsyKRz2vrKmlhthSO24my4GZ3FgkZqzokWeJM9veR4nLzLvz/DU/1kTMZ9W02zuP3oUDwW5k2cbso5oltQxB9PSECPzsU03AKql6mXHzQCdG6syauuFf2bvfIF1Qdh8t hidesor@yahoo.com.tw  <br>
+
+
+</p>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
