@@ -1,0 +1,327 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"up",
+				"upload"
+			],
+			[
+				"M",
+				"musics"
+			],
+			[
+				"A",
+				"articles"
+			],
+			[
+				"m",
+				"margin-left"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"b",
+				"border-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 27.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')",
+			"cd nirvana"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/benwu/railsbridge"
+	],
+	"file_history":
+	[
+		"/Users/benwu/railsbridge/kitty/app/controllers/account/posts_controller.rb",
+		"/Users/benwu/railsbridge/kitty/app/views/account/posts/index.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/models/post.rb",
+		"/Users/benwu/railsbridge/kitty/app/views/groups/new.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/views/groups/edit.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/views/groups/_form.html.erb",
+		"/Users/benwu/railsbridge/kitty/lib/tasks/dev.rake",
+		"/Users/benwu/railsbridge/kitty/db/seeds.rb",
+		"/Users/benwu/railsbridge/kitty/app/views/groups/note.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/views/groups/index.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/helpers/posts_helper.rb",
+		"/Users/benwu/railsbridge/kitty/app/views/groups/show.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/models/group.rb",
+		"/Users/benwu/railsbridge/kitty/db/migrate/20160317155200_add2_posts_count_to_group.rb",
+		"/Users/benwu/railsbridge/kitty/app/views/account/groups/index.html.erb",
+		"/Users/benwu/railsbridge/kitty/db/migrate/20160317154831_drop_posts_count_to_group.rb",
+		"/Users/benwu/railsbridge/kitty/app/models/group_user.rb",
+		"/Users/benwu/railsbridge/kitty/app/controllers/account/groups_controller.rb",
+		"/Users/benwu/railsbridge/kitty/app/controllers/groups_controller.rb",
+		"/Users/benwu/railsbridge/kitty/config/routes.rb",
+		"/Users/benwu/railsbridge/kitty/app/controllers/posts_controller.rb",
+		"/Users/benwu/railsbridge/kitty/app/views/common/_navbar.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/models/user.rb",
+		"/Users/benwu/railsbridge/kitty/app/controllers/application_controller.rb",
+		"/Users/benwu/railsbridge/kitty/app/views/devise/registrations/edit.html.erb",
+		"/Users/benwu/railsbridge/kitty/db/migrate/20160315145518_add_user_id_to_group.rb",
+		"/Users/benwu/railsbridge/kitty/app/views/devise/registrations/new.html.erb",
+		"/Users/benwu/railsbridge/kitty/db/schema.rb",
+		"/Users/benwu/railsbridge/kitty/db/migrate/20160312163610_add_name_to_user.rb",
+		"/Users/benwu/railsbridge/kitty/app/assets/javascripts/application.js",
+		"/Users/benwu/railsbridge/kitty/Gemfile",
+		"/Users/benwu/railsbridge/kitty/app/views/posts/edit.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/views/posts/new.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/views/common/_footer.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/views/layouts/application.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/helpers/application_helper.rb",
+		"/Users/benwu/railsbridge/kitty/app/assets/stylesheets/application.css.scss",
+		"/Users/benwu/railsbridge/kitty/app/models/_footer.html.erb",
+		"/Users/benwu/railsbridge/kitty/app/models/_navbar.html.erb",
+		"/Users/benwu/railsbridge/kitty/Gemfile.lock",
+		"/Users/benwu/railsbridge/snoopy/app/views/common/_navbar.html.erb",
+		"/Users/benwu/railsbridge/snoopy/app/assets/stylesheets/application.css.scss",
+		"/Users/benwu/railsbridge/snoopy/Gemfile",
+		"/Users/benwu/railsbridge/snoopy/app/controllers/topics_controller.rb",
+		"/Users/benwu/railsbridge/snoopy/app/views/topics/index.html.erb",
+		"/Users/benwu/railsbridge/snoopy/app/views/layouts/application.html.erb",
+		"/Users/benwu/railsbridge/snoopy/app/views/common/_footer.html.erb",
+		"/Users/benwu/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/benwu/railsbridge/snoopy/app/assets/stylesheets/application.css",
+		"/Users/benwu/railsbridge/snoopy/app/views/welcome/index.html.erb",
+		"/Users/benwu/railsbridge/snoopy/bin/setup",
+		"/Users/benwu/railsbridge/snoopy/app/views/welcome/note_git.html.erb",
+		"/Users/benwu/railsbridge/snoopy/app/views/welcome/about.html.erb",
+		"/Users/benwu/railsbridge/snoopy/app/controllers/welcome_controller.rb",
+		"/Users/benwu/railsbridge/snoopy/app/views/welcome/note.html.erb",
+		"/Users/benwu/railsbridge/snoopy/app/views/note_git.html.erb",
+		"/Users/benwu/railsbridge/snoopy/app/views/topics/edit.html.erb",
+		"/Users/benwu/railsbridge/snoopy/app/controllers/welcomes_controller.rb",
+		"/Users/benwu/railsbridge/snoopy/config.ru",
+		"/Users/benwu/nirvana/app/views/articles/_form.html.erb",
+		"/Users/benwu/nirvana/app/models/download.rb",
+		"/Users/benwu/nirvana/app/controllers/articles_controller.rb",
+		"/Users/benwu/nirvana/db/schema.rb",
+		"/Users/benwu/nirvana/app/models/article.rb",
+		"/Users/benwu/nirvana/db/migrate/20160229152538_add_upload_to_articles_04.rb",
+		"/Users/benwu/nirvana/app/views/downloads/_form.html.erb",
+		"/Users/benwu/nirvana/db/migrate/20160229152241_add_upload_to_articles_03.rb",
+		"/Users/benwu/nirvana/db/migrate/20160229150901_add_upload_to_articles_02.rb",
+		"/Users/benwu/nirvana/db/migrate/20160229145454_add_upload_to_articles_01.rb",
+		"/Users/benwu/nirvana/db/migrate/20160225084854_add_upload_to_articles.rb",
+		"/Users/benwu/nirvana/app/views/layouts/application.html.erb",
+		"/Users/benwu/nirvana/app/helpers/downloads_helper.rb",
+		"/Users/benwu/nirvana/config/routes.rb",
+		"/Users/benwu/nirvana/app/views/welcome/note.html.erb",
+		"/Users/benwu/nirvana/app/views/welcome/about.html.erb",
+		"/Users/benwu/nirvana/app/views/downloads/show.html.erb",
+		"/Users/benwu/nirvana/app/views/downloads/index.html.erb",
+		"/Users/benwu/nirvana/app/controllers/downloads_controller.rb",
+		"/Users/benwu/nirvana/db/migrate/20160225084410_add_upload_to_articles.rb",
+		"/Users/benwu/nirvana/db/development.sqlite3",
+		"/Users/benwu/nirvana/app/views/downloads/edit.html.erb",
+		"/Users/benwu/nirvana/app/views/downloads/new.html.erb",
+		"/Users/benwu/nirvana/app/models/music.rb",
+		"/Users/benwu/nirvana/Gemfile",
+		"/Users/benwu/nirvana/app/views/articles/new.html.erb",
+		"/Users/benwu/nirvana/app/views/articles/index.html.erb",
+		"/Users/benwu/nirvana/app/models/user.rb",
+		"/Users/benwu/nirvana/app/controllers/avatars_controller.rb",
+		"/Users/benwu/nirvana/app/views/layouts/musics.html.erb",
+		"/Users/benwu/nirvana/app/views/welcome/index.html.erb",
+		"/Users/benwu/nirvana/app/assets/stylesheets/application.css",
+		"/Users/benwu/nirvana/app/views/musics/index.html.erb",
+		"/Users/benwu/nirvana/app/controllers/application_controller.rb",
+		"/Users/benwu/nirvana/config/environments/development.rb",
+		"/Users/benwu/nirvana/config/environments/production.rb",
+		"/Users/benwu/nirvana/app/controllers/welcome_controller.rb",
+		"/Users/benwu/nirvana/config.ru",
+		"/Users/benwu/nirvana/app/views/layouts/articles.html.erb",
+		"/Users/benwu/nirvana/app/helpers/application_helper.rb",
+		"/Users/benwu/nirvana/app/views/musics/_form.html.erb",
+		"/Users/benwu/nirvana/app/controllers/musics_controller.rb",
+		"/Users/benwu/nirvana/app/controllers/comments_controller.rb",
+		"/Users/benwu/nirvana/config/boot.rb",
+		"/Users/benwu/nirvana/app/helpers/musics_helper.rb",
+		"/Users/benwu/nirvana/config/initializers/inflections.rb",
+		"/Users/benwu/nirvana/config/initializers/mime_types.rb",
+		"/Users/benwu/nirvana/config/initializers/backtrace_silencers.rb",
+		"/Users/benwu/nirvana/config/initializers/cookies_serializer.rb",
+		"/Users/benwu/nirvana/config/initializers/filter_parameter_logging.rb",
+		"/Users/benwu/nirvana/app/assets/stylesheets/articles.scss",
+		"/Users/benwu/nirvana/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/Users/benwu/nirvana/app/assets/stylesheets/bootstrap_and_overrides.css",
+		"/Users/benwu/nirvana/app/assets/stylesheets/comments.scss",
+		"/Users/benwu/nirvana/app/assets/images/bg_garden2.jpg",
+		"/Users/benwu/nirvana/app/views/articles/edit.html.erb",
+		"/Users/benwu/nirvana/app/views/articles/show.html.erb",
+		"/Users/benwu/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/benwu/test123/bin/rake",
+		"/Users/benwu/nirvana/config/application.rb"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"'\n",
+			"root",
+			"benwu",
+			"topics",
+			"true"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "kitty.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
